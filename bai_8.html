@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_8</title>
+</head>
+<body>
+<button type="button" onclick="play()" style="width: 200px;height: 200px;font-size: 50px;text-align: center">CHOI</button>
+<h2 id="tip"></h2>
+<script>
+    function play(){
+        let a = parseInt(prompt("nhap so dau tien cua khoang"));
+        let b = parseInt(prompt("nhap so cuoi cung cua khoang"));
+        let k = Math.floor((Math.random()*b)+a);
+
+        for(let i = 1;i < 4;i++){
+            let c = parseInt(prompt("nhap so ma ban du doan"));
+            if (c == k){
+                document.getElementById("tip").innerHTML = "YOU WON";
+                break;
+            }else if(c < k){
+                alert("so ban chon nho hon dap an");
+                continue;
+            }else{
+                alert("so ban chon lon hon dap an");
+                continue;
+            }
+        }
+    }
+</script>
+</body>
+</html>

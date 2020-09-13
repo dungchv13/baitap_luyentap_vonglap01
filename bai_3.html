@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_3</title>
+</head>
+<body>
+<script>
+    let f1 = 1,f2 = 1,fn;
+    document.write("f1="+f1+"<br>");
+    document.write("f2="+f2+"<br>");
+    for(let i = 3;i <=20 ; i++){
+        fn = f2 + f1;
+        document.write("f"+i+"="+fn+"<br>");
+        f1 = f2;
+        f2 = fn;
+    }
+</script>
+</body>
+</html>

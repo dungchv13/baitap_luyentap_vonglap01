@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5</title>
+</head>
+<body>
+<script>
+    let f1 = 1,f2 = 1,fn;
+    let sum = f1 + f2;
+    for(let i = 3;i <=20 ; i++){
+        fn = f2 + f1;
+        sum +=fn;
+        f1 = f2;
+        f2 = fn;
+    }
+    alert("tong 20 so fibonacci dau tien la:"+sum);
+</script>
+</body>
+</html>

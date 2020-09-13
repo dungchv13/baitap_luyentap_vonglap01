@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_4</title>
+</head>
+<body>
+<script>
+    let f1 = 1,f2 = 1,fn;
+
+    for(let i = 3;; i++){
+        fn = f2 + f1;
+
+        if (fn % 5 == 0){
+            document.write("so fibonacci dau tien chia het cho 5 la: f"+i+" = "+fn);
+            break;
+        }
+
+        f1 = f2;
+        f2 = fn;
+    }
+</script>
+</body>
+</html>
